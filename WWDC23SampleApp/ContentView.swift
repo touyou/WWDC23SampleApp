@@ -10,7 +10,7 @@ import SwiftData
 
 struct ContentView: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @Query(sort: \.timestamp) private var items: [Item]
     
     var body: some View {
         NavigationView {
@@ -42,7 +42,7 @@ struct ContentView: View {
 
     private func addItem() {
         withAnimation {
-            let newItem = Item(timestamp: Date())
+            let newItem = Item(timestamp: Date(), name: "Hello \(Date().formatted(Date.FormatStyle(date: .abbreviated, time: .shortened)))")
             modelContext.insert(newItem)
         }
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		464A86EF2A3069E70043B2DC /* ImageAnimationValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A86EE2A3069E60043B2DC /* ImageAnimationValues.swift */; };
 		46A186B12A305A24008D6DBD /* WWDC23SampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A186B02A305A24008D6DBD /* WWDC23SampleAppApp.swift */; };
 		46A186B32A305A24008D6DBD /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A186B22A305A24008D6DBD /* Item.swift */; };
 		46A186B52A305A24008D6DBD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A186B42A305A24008D6DBD /* ContentView.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		464A86EE2A3069E60043B2DC /* ImageAnimationValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAnimationValues.swift; sourceTree = "<group>"; };
 		46A186AD2A305A24008D6DBD /* WWDC23SampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDC23SampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A186B02A305A24008D6DBD /* WWDC23SampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC23SampleAppApp.swift; sourceTree = "<group>"; };
 		46A186B22A305A24008D6DBD /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				46A186B02A305A24008D6DBD /* WWDC23SampleAppApp.swift */,
 				46A186B22A305A24008D6DBD /* Item.swift */,
 				46A186B42A305A24008D6DBD /* ContentView.swift */,
+				464A86EE2A3069E60043B2DC /* ImageAnimationValues.swift */,
 				46A186B62A305A25008D6DBD /* Assets.xcassets */,
 				46A186B82A305A25008D6DBD /* WWDC23SampleApp.entitlements */,
 				46A186BC2A305A25008D6DBD /* Info.plist */,
@@ -264,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464A86EF2A3069E70043B2DC /* ImageAnimationValues.swift in Sources */,
 				46A186B32A305A24008D6DBD /* Item.swift in Sources */,
 				46A186B12A305A24008D6DBD /* WWDC23SampleAppApp.swift in Sources */,
 				46A186B52A305A24008D6DBD /* ContentView.swift in Sources */,

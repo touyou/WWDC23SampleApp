@@ -13,6 +13,7 @@ struct ContentView: View {
     @Query(sort: \.timestamp, order: .reverse) private var items: [Item]
     @State private var isAlertPresented: Bool = false
     @State private var name: String = ""
+    @State private var filterCnt = 0
     
     var body: some View {
         NavigationView {
@@ -23,17 +24,30 @@ struct ContentView: View {
                             KeyframeAnimator(
                                 initialValue: ImageAnimationValues(), repeating: true
                             ) { values in
-                                    Image(systemName: "cat.circle.fill")
-                                        .resizable()
-                                        .frame(width: 200, height: 200)
-                                        .rotationEffect(values.rotation)
+                                Image("cat")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(maxWidth: 300)
+                                    .colorEffect(Shader(function: ShaderFunction(library: .default, name: "eightBitThresholdFilter"), arguments: [.float(Float(filterCnt))]))
+                                    .colorEffect(Shader(function: ShaderFunction(library: .default, name: "crtColor"), arguments: [.float(8), .float(12)]))
+                                    .rotationEffect(values.rotation)
                                 } keyframes: { _ in
                                     KeyframeTrack(\.rotation) {
                                         SpringKeyframe(Angle(degrees: -20), spring: .bouncy(duration: 0.1))
                                         SpringKeyframe(Angle(degrees: 20), spring: .bouncy(duration: 0.1))
                                     }
                                 }
-                            Text("Created at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
+                                .onTapGesture {
+                                    filterCnt = (filterCnt + 1) % 5
+                                }
+                            Spacer()
+                            Text("Created at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard)) Filter: \(filterCnt)")
+                                .phaseAnimator([false, true]) { content, value in
+                                    content
+                                        .opacity(value ? 1.0 : 0.5)
+                                } animation: { _ in
+                                        .easeInOut(duration: 0.3)
+                                }
                         }
                         .navigationTitle(Text(item.name))
                     } label: {

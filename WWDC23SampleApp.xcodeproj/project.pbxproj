@@ -16,6 +16,8 @@
 		46A186C62A305A25008D6DBD /* WWDC23SampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A186C52A305A25008D6DBD /* WWDC23SampleAppTests.swift */; };
 		46A186D02A305A25008D6DBD /* WWDC23SampleAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A186CF2A305A25008D6DBD /* WWDC23SampleAppUITests.swift */; };
 		46A186D22A305A25008D6DBD /* WWDC23SampleAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A186D12A305A25008D6DBD /* WWDC23SampleAppUITestsLaunchTests.swift */; };
+		46F9E7882A36AC1400C67CF4 /* EightBitThresholdFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 46F9E7872A36AC1400C67CF4 /* EightBitThresholdFilter.metal */; };
+		46F9E78A2A36B1AE00C67CF4 /* CRTColorFilter.metal in Sources */ = {isa = PBXBuildFile; fileRef = 46F9E7892A36B1AE00C67CF4 /* CRTColorFilter.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		46A186CB2A305A25008D6DBD /* WWDC23SampleAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WWDC23SampleAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A186CF2A305A25008D6DBD /* WWDC23SampleAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC23SampleAppUITests.swift; sourceTree = "<group>"; };
 		46A186D12A305A25008D6DBD /* WWDC23SampleAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC23SampleAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		46F9E7872A36AC1400C67CF4 /* EightBitThresholdFilter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = EightBitThresholdFilter.metal; sourceTree = "<group>"; };
+		46F9E7892A36B1AE00C67CF4 /* CRTColorFilter.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CRTColorFilter.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				46A186B82A305A25008D6DBD /* WWDC23SampleApp.entitlements */,
 				46A186BC2A305A25008D6DBD /* Info.plist */,
 				46A186B92A305A25008D6DBD /* Preview Content */,
+				46F9E7872A36AC1400C67CF4 /* EightBitThresholdFilter.metal */,
+				46F9E7892A36B1AE00C67CF4 /* CRTColorFilter.metal */,
 			);
 			path = WWDC23SampleApp;
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 				464A86EF2A3069E70043B2DC /* ImageAnimationValues.swift in Sources */,
 				46A186B32A305A24008D6DBD /* Item.swift in Sources */,
 				46A186B12A305A24008D6DBD /* WWDC23SampleAppApp.swift in Sources */,
+				46F9E78A2A36B1AE00C67CF4 /* CRTColorFilter.metal in Sources */,
+				46F9E7882A36AC1400C67CF4 /* EightBitThresholdFilter.metal in Sources */,
 				46A186B52A305A24008D6DBD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
